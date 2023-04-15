@@ -1,70 +1,29 @@
-﻿//  int a, b;
- 
-//         Console.WriteLine("Введите два числа : ");
- 
-//         a = Convert.ToInt32(Console.ReadLine());
- 
-//         b = Convert.ToInt32(Console.ReadLine());
- 
-//         if (a > b)
- 
-//         {
- 
-//             Console.WriteLine("{0} наибольшее число", a);
- 
-//         }
- 
+﻿// Console.WriteLine("Введите трехзначное число ");
+//     while(true)
+//     {
+//         string input = Console.ReadLine();
+//         if(!input.Equals("exit"))
+//             Console.WriteLine("{0}->{1}",input, input[1]);
 //         else
- 
-//         {
- 
-//             Console.WriteLine("{0} наибольшее число ", b);
- 
-//         }
- 
-//         Console.ReadLine();
+//             break;
+//     }    Первый вариант решения
 
-
-// Console.WriteLine("Введите первое число= ");
-// int a = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите второе число= ");
-// int b = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите третье число= ");
-// int c = Convert.ToInt32(Console.ReadLine());
-// int max = a;
-// if (max < b) max = b;
-// if (max < c) max = c;
-
-// System.Console.WriteLine("Максимальное из этих чисел =  "+ max);
+Console.WriteLine("Введите число: ");
+		int number = Convert.ToInt16(Console.ReadLine());
+        int second  = (number % 100) / 10;
+		if (number > 99 && number <= 999)
+		Console.WriteLine("Число трёхзначное");
+		else
+		Console.WriteLine("Число не трёхзначное");
+        System.Console.WriteLine(second);
 
 
 
-// Console.Write("Введите число : ");
- 
-//             int s = int.Parse(Console.ReadLine());
- 
-//             if (s % 2 == 0)
- 
-//             {
- 
-//                 Console.Write("Введенное число является четным");
- 
-//                 Console.Read();
- 
-//             }
- 
-//             else
- 
-//             {
- 
-//                 Console.Write("Введенное число нечетное");
- 
-//                 Console.Read();}
 
-Console.WriteLine("Введите число N: ");
-int n = Convert.ToInt32(Console.ReadLine());
-for(int i=1;i<=n;i++)
-{
-if (i % 2 == 0)
-System.Console.Write(i + ", ");
-}
+echo "# Homework-15-04" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/poma710/Homework-15-04.git
+git push -u origin main
